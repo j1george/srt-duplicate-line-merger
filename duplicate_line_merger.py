@@ -1,5 +1,11 @@
 import glob
 import re
+import os
+
+
+directory = 'merged'
+if not os.path.exists(directory):
+    os.makedirs(directory)
 
 
 class Time:
@@ -106,5 +112,5 @@ for file_path in glob.glob("*.srt"):
 
     merged_subs = '\n\n'.join(str(x) for x in renumbered_merged_sub_arr)
 
-    with open('merged/' + file_path, 'w+', encoding='utf-8-sig') as f:
+    with open(directory + '/' + file_path, 'w+', encoding='utf-8-sig') as f:
         f.write(merged_subs)
