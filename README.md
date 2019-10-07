@@ -13,6 +13,9 @@ Consolidated files will be populated in the 'merged' directory
 Subtitles will sometimes have the same line split into multiple time signatures
 
 ```
+4
+00:00:54,805 --> 00:00:55,847
+Who's available?
 
 5
 00:00:56,223 --> 00:00:56,557
